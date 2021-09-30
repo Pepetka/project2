@@ -1,0 +1,528 @@
+@import "_mixin";
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 10px;
+}
+
+header {
+  height: 8.5rem;
+}
+nav {
+  height: 8.5rem;
+  line-height: 8.5rem;
+  width: 100%;
+  ul {
+    width: 100%;
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+  }
+  li {
+    display: inline-block;
+    margin: 0 1.5rem;
+  }
+  a {
+    font-size: 1.1rem;
+    @include OSBold;
+    text-transform: uppercase;
+    color: #989898;
+    text-decoration: none;
+    &:hover {
+      color: #989898;
+      text-decoration: none;
+    }
+  }
+  display: table;
+}
+.logo {
+  margin-top: 2rem;
+}
+.wrap {
+  display: table;
+  width: 100%;
+  height: 8.5rem;
+  &-block {
+    display: table-cell;
+    vertical-align: middle;
+  }
+}
+.header-btn {
+  background-color: #bcda5c;
+  border: none;
+  border-radius: 1.9rem;
+  color: #fff;
+  font-size: 1.1rem;
+  @include OSBold;
+  text-transform: uppercase;
+  height: 3.8rem;
+  width: 10rem;
+  &:hover {
+    border: 1px #8b8c8d solid;
+  }
+}
+
+.banner {
+  text-align: center;
+  padding: 17rem 0 5rem 0;
+  background: url("../img/bg-sec1.png") center center no-repeat;
+  background-size: cover;
+  &:after {
+    content: "";
+    position: absolute;
+    top: 8.5rem;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 2;
+    height: 584px;
+  }
+  h1 {
+    color: #fff;
+    text-align: center;
+    @include OSBold;
+    word-spacing: 8px;
+    letter-spacing: 3px;
+    line-height: 5rem;
+    font-size: 3.7rem;
+    span {
+      @include OSReg;
+      font-size: 2.7rem;
+    }
+  }
+  .container {
+    position: relative;
+    z-index: 3;
+  }
+  .sec-btn {
+    background-color: #99c50a;
+    color: #fff;
+    @include OSBold;
+    font-size: 1.8rem;
+    border: none;
+    border-radius: 8px;
+    height: 75px;
+    width: 254px;
+    margin-top: 5.8rem;
+    margin-bottom: 10rem;
+    &:hover {
+      box-shadow: 2px 3px 2px rgba(0, 0, 0, 0.5);
+    }
+  }
+  .back-next {
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    margin-right: 1.5rem;
+  }
+}
+.sec1 {
+  padding: 10rem 0 16rem 0;
+  img {
+    margin-bottom: 2.5rem;
+  }
+  h2 {
+    @include OSBold;
+    color: #515151;
+    font-size: 2.2rem;
+    line-height: 5rem;
+  }
+  p {
+    @include OSReg;
+    color: #919191;
+    font-size: 1.5rem;
+    line-height: 3.5rem;
+    margin-top: 3rem;
+  }
+}
+.sec2 {
+  margin-bottom: 10rem;
+  ul {
+    padding: 0;
+    margin: 0;
+    border-bottom: solid #e6e6e6 0.1rem;
+  }
+  li {
+    margin: 0;
+    display: inline-block;
+    p {
+      text-align: center;
+      @include OSBold;
+      color: #fff;
+      height: 4.5rem;
+      width: 4.5rem;
+      line-height: 4.5rem;
+      font-size: 1.8rem;
+      display: inline-block;
+      margin-right: 3rem;
+    }
+    .gray {
+      background: url("../img/object-gray.png") center no-repeat;
+      background-size: cover;
+    }
+    .green {
+      background: url("../img/object-green.png") center no-repeat;
+      background-size: cover;
+    }
+    button {
+      padding: 0 3rem 3.5rem 3rem;
+      display: inline-block;
+      background-color: #fff;
+      border: none;
+      font-size: 2.5rem;
+      @include OSReg;
+      color: #656565;
+    }
+  }
+  .btn-img1 {
+    margin-right: 6rem;
+    margin-left: 0;
+  }
+  .btn-img3 {
+    margin-left: 6rem;
+    margin-right: 0;
+  }
+  .btn-img2 {
+    margin: 0 6rem;
+  }
+  img {
+    margin-right: 11rem;
+    margin-bottom: 10rem;
+  }
+  .content-text {
+    display: inline-block;
+    text-align: left;
+    h3 {
+      @include OSBold;
+      color: #b2d443;
+      font-size: 2rem;
+      margin-top: 6.5rem;
+      margin-bottom: 3rem;
+    }
+    p {
+      @include OSReg;
+      color: #b5b5b5;
+      font-size: 1.5rem;
+      line-height: 3rem;
+    }
+  }
+  .button1 {
+    .green {
+      display: none;
+    }
+  }
+  .button2 {
+    .green {
+      display: none;
+    }
+  }
+  .button3 {
+    .green {
+      display: none;
+    }
+  }
+  .simple-content {
+    display: none;
+  }
+  .trans-content {
+    display: none;
+  }
+  .coll-content {
+    display: none;
+  }
+}
+.sec3 {
+  color: #515151;
+  h3 {
+    @include OSReg;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 5rem;
+    text-align: left;
+  }
+  p {
+    @include OSReg;
+    font-size: 1.3rem;
+    line-height: 3rem;
+    text-align: left;
+  }
+  button {
+    border: none;
+    border-radius: 0.8rem;
+    height: 5rem;
+    width: 19rem;
+    color: #fff;
+    @include OSBold;
+    font-size: 1.3rem;
+  }
+  .find-properties {
+    background: #e2f8ff;
+    height: 30rem;
+    button {
+      background-color: #26a6d1;
+    }
+  }
+  .find-buyers {
+    background: #f5f9eb;
+    height: 30rem;
+    button {
+      background-color: #add136;
+    }
+  }
+  img {
+    display: inline-block;
+    margin-right: 7rem;
+    margin-bottom: 15rem;
+  }
+  .text {
+    display: inline-block;
+  }
+  .prop-sec,
+  .buy-sec {
+    padding: 0;
+  }
+}
+.sec4 {
+  padding-top: 8rem;
+  h2 {
+    font-size: 2rem;
+    @include OSBold;
+    color: #515151;
+    margin-bottom: 2rem;
+  }
+  p {
+    font-size: 1.5rem;
+    @include OSReg;
+    color: #8f8f8f;
+    line-height: 3rem;
+    margin-bottom: 8rem;
+  }
+  button {
+    font-size: 1.3rem;
+    @include OSBold;
+    color: #838383;
+    background-color: #fff;
+    border: 0.1rem #b6b6b6 solid;
+    border-radius: 0.8rem;
+    height: 5rem;
+    width: 18.5rem;
+  }
+  .wrap {
+    display: table;
+    width: 100%;
+    height: 10rem;
+    &-block {
+      display: table-cell;
+      vertical-align: middle;
+    }
+  }
+  .feature-box {
+    background-color: #f9f9f9;
+    border: 0.1rem #e5e5e5 solid;
+    border-radius: 1rem;
+    width: 30rem;
+    .photo1 {
+      height: 22.5rem;
+      width: 30rem;
+      background: url("../img/london1.png") no-repeat;
+      background-size: cover;
+    }
+    .photo2 {
+      height: 22.5rem;
+      width: 30rem;
+      background: url("../img/london2.png") no-repeat;
+      background-size: cover;
+    }
+    .photo3 {
+      height: 22.5rem;
+      width: 30rem;
+      background: url("../img/london3.png") no-repeat;
+      background-size: cover;
+    }
+    h3 {
+      @include OSBold;
+      color: #484848;
+      text-align: left;
+      font-size: 1.5rem;
+      margin-bottom: 0.6rem;
+    }
+    p {
+      color: #6d6d6d;
+      @include OSReg;
+      text-align: left;
+      font-size: 1.1rem;
+      line-height: 2.4rem;
+      margin-bottom: 1.5rem;
+    }
+    .no-photo {
+      padding: 3rem 2.5rem 2.5rem 2.5rem;
+    }
+    progress {
+      height: 1.5rem;
+      width: 100%;
+      border: none;
+      border-radius: 0.75rem;
+      background-color: #e3e3e3;
+      margin-bottom: 1rem;
+    }
+    progress::-webkit-progress-bar {
+      background-color: #add136;
+      height: 1.5rem;
+      border-radius: 0.75rem;
+    }
+    progress::-webkit-progress-value {
+      background-color: #add136;
+      height: 1.5rem;
+      border-top-left-radius: 0.75rem;
+      border-bottom-left-radius: 0.75rem;
+    }
+    progress::-moz-progress-bar {
+      background-color: #add136;
+      height: 1.5rem;
+      border-top-left-radius: 0.75rem;
+      border-bottom-left-radius: 0.75rem;
+    }
+    .percent {
+      width: 49%;
+      display: inline-block;
+      text-align: left;
+      margin: 0;
+      font-size: 1.1rem;
+      @include OSBold;
+    }
+    .days {
+      width: 49%;
+      display: inline-block;
+      text-align: right;
+      margin: 0;
+      font-size: 1.1rem;
+      @include OSBold;
+    }
+    .projects {
+      margin-top: 2.5rem;
+      width: 100%;
+      text-align: right;
+    }
+    a {
+      text-decoration: none;
+      color: #858585;
+      font-size: 1.5rem;
+      @include OSBold;
+      &::after {
+        content: url("../img/after.png");
+        margin-left: 1rem;
+      }
+    }
+    .photo1,
+    .photo2,
+    .photo3 {
+      position: relative;
+    }
+    .amt-tag {
+      margin-bottom: 1.7rem;
+      margin-right: 1.7rem;
+      bottom: 0;
+      right: 0;
+      position: absolute;
+      height: 3.6rem;
+      width: 14rem;
+      background: #26a6d1;
+      border-radius: 0.5rem;
+      p {
+        margin: 0;
+        text-align: center;
+        line-height: 3.6rem;
+        height: 3.6rem;
+        font-size: 1.5rem;
+        color: #fff;
+        @include OSReg;
+        span {
+          @include OSBold;
+        }
+      }
+    }
+  }
+}
+.sec5 {
+  padding-top: 7rem;
+  position: relative;
+  background: url("../img/bg-sec5.png") center center no-repeat;
+  background-size: cover;
+  h2 {
+    text-align: center;
+    @include OSBold;
+    color: #9ec02d;
+    font-size: 3rem;
+    margin-bottom: 4rem;
+  }
+  p {
+    margin-bottom: 10rem;
+    line-height: 3rem;
+    text-align: center;
+    @include OSReg;
+    color: #949494;
+    font-size: 1.5rem;
+  }
+  .text-quote {
+    height: 15rem;
+    width: 40rem;
+    background: #fff;
+    border-radius: 1rem;
+    text-align: center;
+    padding: 2rem;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      border: 2rem solid transparent;
+      border-left: 2rem solid #fff;
+      top: 13rem;
+      left: 8rem;
+    }
+  }
+  blockquote {
+    display: inline-block;
+    position: relative;
+    margin-bottom: 15.5rem;
+    h3 {
+      margin-bottom: 1rem;
+      color: #9ec02d;
+      @include OSBold;
+      font-size: 1.7rem;
+    }
+    p {
+      line-height: 2.5rem;
+      color: #8c8c8c;
+      @include OSReg;
+      font-size: 1.1rem;
+    }
+  }
+  cite {
+    position: absolute;
+    font-size: 1.5rem;
+    color: #494949;
+    @include OSBold;
+    font-style: normal;
+    top: 18.5rem;
+    left: 5rem;
+  }
+}
+footer {
+  .companies {
+    height: 13rem;
+    display: flex;
+    align-items: center;
+  }
+  .copirate {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 6.5rem;
+    color: #848484;
+    font-size: 1.1rem;
+    @include OSReg;
+  }
+}
