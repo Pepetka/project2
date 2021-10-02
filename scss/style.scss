@@ -624,6 +624,9 @@ footer {
       margin-bottom: 15rem;
     }
   }
+  .text-quote {
+    width: 100%;
+  }
 }
 @media (max-width: 470px) {
   header {
@@ -654,5 +657,8 @@ footer {
       margin-right: 1rem;
       margin-bottom: 15rem;
     }
+  }
+  .text-quote {
+    width: 100%;
   }
 }
