@@ -259,11 +259,6 @@ nav {
       background-color: #add136;
     }
   }
-  img {
-    display: inline-block;
-    margin-right: 4rem;
-    margin-bottom: 15rem;
-  }
   .text {
     display: inline-block;
   }
@@ -608,7 +603,7 @@ footer {
     top: 32rem;
     height: 59.9rem;
   }
-  br:not(.br-feature, .br-quote, .br-h1) {
+  br:not(.br-feature, .br-quote, .br-h1, .br-find) {
     display: none;
   }
   footer {
@@ -639,7 +634,7 @@ footer {
     top: 32rem;
     height: 59.9rem;
   }
-  br:not(.br-feature, .br-quote, .br-h1) {
+  br:not(.br-feature, .br-quote, .br-h1, .br-find) {
     display: none;
   }
   footer {
