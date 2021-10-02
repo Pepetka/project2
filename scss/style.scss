@@ -624,9 +624,6 @@ footer {
       margin-bottom: 15rem;
     }
   }
-  .text-quote {
-    width: 100%;
-  }
 }
 @media (max-width: 470px) {
   header {
@@ -642,7 +639,7 @@ footer {
     top: 32rem;
     height: 59.9rem;
   }
-  br:not(.br-feature, .br-quote, .br-h1, .br-find) {
+  br:not(.br-feature, .br-h1, .br-find) {
     display: none;
   }
   footer {
@@ -658,7 +655,9 @@ footer {
       margin-bottom: 15rem;
     }
   }
-  .text-quote {
-    width: 100%;
+  .sec5 {
+    .text-quote {
+      width: 100%;
+    }
   }
 }
