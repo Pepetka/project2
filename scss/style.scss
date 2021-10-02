@@ -554,6 +554,14 @@ footer {
       padding: 3rem 0;
     }
   }
+  .find-buyers,
+  .find-properties {
+    img {
+      display: inline-block;
+      margin-right: 3rem;
+      margin-bottom: 15rem;
+    }
+  }
 }
 @media (min-width: 575px) and (max-width: 767px) {
   header {
@@ -575,6 +583,14 @@ footer {
   footer {
     .companies {
       padding: 3rem 0;
+    }
+  }
+  .find-buyers,
+  .find-properties {
+    img {
+      display: inline-block;
+      margin-right: 2rem;
+      margin-bottom: 15rem;
     }
   }
 }
@@ -600,6 +616,14 @@ footer {
       padding: 2rem 0;
     }
   }
+  .find-buyers,
+  .find-properties {
+    img {
+      display: inline-block;
+      margin-right: 1rem;
+      margin-bottom: 15rem;
+    }
+  }
 }
 @media (max-width: 470px) {
   header {
@@ -621,6 +645,14 @@ footer {
   footer {
     .companies {
       padding: 1rem 0;
+    }
+  }
+  .find-buyers,
+  .find-properties {
+    img {
+      display: inline-block;
+      margin-right: 1rem;
+      margin-bottom: 15rem;
     }
   }
 }
