@@ -85,8 +85,6 @@ nav {
     color: #fff;
     text-align: center;
     @include OSBold;
-    word-spacing: 8px;
-    letter-spacing: 3px;
     line-height: 5rem;
     font-size: 3.7rem;
     span {
@@ -140,13 +138,12 @@ nav {
 }
 .sec2 {
   margin-bottom: 10rem;
-  ul {
-    padding: 0;
-    margin: 0;
+  .hr {
     border-bottom: solid #e6e6e6 0.1rem;
+    margin-bottom: 2rem;
   }
-  li {
-    margin: 0;
+  .btn-img {
+    margin-top: 2rem;
     display: inline-block;
     p {
       text-align: center;
@@ -168,6 +165,7 @@ nav {
       background-size: cover;
     }
     button {
+      width: 30rem;
       padding: 0 3rem 3.5rem 3rem;
       display: inline-block;
       background-color: #fff;
@@ -177,23 +175,12 @@ nav {
       color: #656565;
     }
   }
-  .btn-img1 {
-    margin-right: 6rem;
-    margin-left: 0;
-  }
-  .btn-img3 {
-    margin-left: 6rem;
-    margin-right: 0;
-  }
-  .btn-img2 {
-    margin: 0 6rem;
-  }
-  img {
-    margin-right: 11rem;
-    margin-bottom: 10rem;
+  .content-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .content-text {
-    display: inline-block;
     text-align: left;
     h3 {
       @include OSBold;
@@ -287,6 +274,9 @@ nav {
 }
 .sec4 {
   padding-top: 8rem;
+  .text {
+    padding-left: 4rem;
+  }
   h2 {
     font-size: 2rem;
     @include OSBold;
@@ -319,7 +309,12 @@ nav {
       vertical-align: middle;
     }
   }
+  .pr-feature {
+    display: flex;
+    justify-content: center;
+  }
   .feature-box {
+    margin-bottom: 2rem;
     background-color: #f9f9f9;
     border: 0.1rem #e5e5e5 solid;
     border-radius: 1rem;
@@ -512,9 +507,12 @@ nav {
 }
 footer {
   .companies {
-    height: 13rem;
     display: flex;
     align-items: center;
+    img {
+      width: 100%;
+      height: auto;
+    }
   }
   .copirate {
     display: flex;
@@ -527,39 +525,102 @@ footer {
   }
 }
 
+@media (min-width: 992px) {
+  footer {
+    .companies {
+      padding: 3rem 0;
+    }
+  }
+}
 @media (min-width: 768px) and (max-width: 992px) {
   header {
     margin-bottom: 7.5rem;
   }
+  .banner {
+    h1 {
+      font-size: 3rem;
+      line-height: 4rem;
+    }
+  }
   .banner::after {
     top: 16rem;
-    height: 63.2rem;
+    height: 55.9rem;
+  }
+  br:not(.br-feature, .br-quote, .br-h1, .br-find, .br-content) {
+    display: none;
+  }
+  footer {
+    .companies {
+      padding: 3rem 0;
+    }
   }
 }
-@media (max-width: 576px) and (max-width: 768px) {
+@media (min-width: 576px) and (max-width: 768px) {
   header {
     margin-bottom: 14.5rem;
   }
+  .banner {
+    h1 {
+      font-size: 3rem;
+      line-height: 4rem;
+    }
+  }
   .banner::after {
     top: 23rem;
-    height: 63.2rem;
+    height: 59.9rem;
+  }
+  br:not(.br-feature, .br-quote, .br-h1, .br-find) {
+    display: none;
+  }
+  footer {
+    .companies {
+      padding: 3rem 0;
+    }
   }
 }
 @media (min-width: 470px) and (max-width: 576px) {
   header {
     margin-bottom: 23.5rem;
   }
+  .banner {
+    h1 {
+      font-size: 3rem;
+      line-height: 4rem;
+    }
+  }
   .banner::after {
     top: 32rem;
-    height: 63.2rem;
+    height: 59.9rem;
+  }
+  br:not(.br-feature, .br-quote, .br-h1, .br-find) {
+    display: none;
+  }
+  footer {
+    .companies {
+      padding: 2rem 0;
+    }
   }
 }
 @media (max-width: 470px) {
   header {
     margin-bottom: 23.5rem;
   }
+  .banner {
+    h1 {
+      font-size: 3rem;
+      line-height: 4rem;
+    }
+  }
   .banner::after {
     top: 32rem;
-    height: 68.2rem;
+    height: 59.9rem;
+  }
+  br:not(.br-feature, .br-quote, .br-h1, .br-find) {
+    display: none;
+  }
+  footer {
+    .companies {
+      padding: 1rem 0;
+    }
   }
 }
