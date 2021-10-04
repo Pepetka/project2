@@ -28,26 +28,42 @@
   <header>
     <div class="container">
       <div class="row">
-        <div class="col-lg-3 col-md-12">
-          <div class="logo">
-            <img src="img/logo.png" alt="logo">
+        <div class="col-lg-3 col-md-12 col-sm-12">
+          <div class="nav-resp">
+            <div class="logo">
+              <img src="../project2/img/logo.png" alt="logo">
+            </div>
+            <div class="menu">
+              <label class="burger-menu" id="burger-menu" for="checkbox" onclick>
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+              </label>
+            </div>
+            <input id="checkbox" type="checkbox" name="burger" onchange="burger()" />
           </div>
         </div>
-        <div class="col-lg-7 col-md-10 col-sm-12">
-          <nav>
-            <ul>
-              <li><a href="#">home</a></li>
-              <li><a href="#">how it works</a></li>
-              <li><a href="#">discover a project</a></li>
-              <li><a href="#">blog</a></li>
-              <li><a href="#">find out more</a></li>
-            </ul>
-          </nav>
-        </div>
-        <div class="col-lg-2 col-md-2 col-sm-12">
-          <div class="wrap">
-            <div class="wrap-block">
-              <button class="header-btn">login</button>
+        <div class="col-lg-9 col-md-12 col-sm-4 offset-lg-0 offset-md-0 offset-sm-8">
+          <div id="menu-box">
+            <div class="row">
+              <div class="col-lg-10 col-md-10 col-sm-12">
+                <nav>
+                  <ul>
+                    <li><a href="#">home</a></li>
+                    <li><a href="#">how it works</a></li>
+                    <li><a href="#">discover a project</a></li>
+                    <li><a href="#">blog</a></li>
+                    <li><a href="#">find out more</a></li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="col-lg-2 col-md-2 col-sm-12">
+                <div class="wrap">
+                  <div class="wrap-block">
+                    <button class="header-btn">login</button>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

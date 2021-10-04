@@ -9,6 +9,8 @@ html {
 
 header {
   height: 8.5rem;
+  position: relative;
+  z-index: 3;
 }
 nav {
   height: 8.5rem;
@@ -78,7 +80,7 @@ nav {
     right: 0;
     bottom: 0;
     background: rgba(0, 0, 0, 0.3);
-    z-index: 2;
+    z-index: 1;
     height: 58.2rem;
   }
   h1 {
@@ -94,7 +96,7 @@ nav {
   }
   .container {
     position: relative;
-    z-index: 3;
+    z-index: 2;
   }
   .sec-btn {
     background-color: #99c50a;
@@ -524,6 +526,40 @@ footer {
     @include OSReg;
   }
 }
+.burger-menu {
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.menu {
+  display: none;
+  padding-bottom: 15px;
+  height: 85px;
+  line-height: 85px;
+}
+.bar1,
+.bar2,
+.bar3 {
+  width: 35px;
+  height: 5px;
+  background: #989898;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+.change .bar2 {
+  opacity: 0;
+}
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-9px, -7px);
+  transform: rotate(45deg) translate(-9px, -7px);
+}
 
 @media (min-width: 992px) {
   footer {
@@ -564,18 +600,9 @@ footer {
   }
 }
 @media (min-width: 575px) and (max-width: 767px) {
-  header {
-    margin-bottom: 14.5rem;
-  }
-  .banner {
-    h1 {
-      font-size: 3rem;
-      line-height: 4rem;
-    }
-  }
   .banner::after {
-    top: 23rem;
-    height: 59.9rem;
+    top: 8.5rem;
+    height: 63.2rem;
   }
   br:not(.br-feature, .br-quote, .br-h1, .br-find) {
     display: none;
@@ -595,18 +622,9 @@ footer {
   }
 }
 @media (min-width: 470px) and (max-width: 575px) {
-  header {
-    margin-bottom: 23.5rem;
-  }
-  .banner {
-    h1 {
-      font-size: 3rem;
-      line-height: 4rem;
-    }
-  }
   .banner::after {
-    top: 32rem;
-    height: 59.9rem;
+    top: 8.5rem;
+    height: 63.2rem;
   }
   br:not(.br-feature, .br-quote, .br-h1, .br-find) {
     display: none;
@@ -626,18 +644,9 @@ footer {
   }
 }
 @media (max-width: 470px) {
-  header {
-    margin-bottom: 23.5rem;
-  }
-  .banner {
-    h1 {
-      font-size: 3rem;
-      line-height: 4rem;
-    }
-  }
   .banner::after {
-    top: 32rem;
-    height: 59.9rem;
+    top: 8.5rem;
+    height: 63.2rem;
   }
   br:not(.br-feature, .br-h1, .br-find) {
     display: none;
@@ -658,6 +667,41 @@ footer {
   .sec5 {
     .text-quote {
       width: 100%;
+    }
+  }
+}
+#checkbox {
+  display: none;
+}
+@media (max-width: 768px) {
+  #menu-box {
+    display: none;
+    background-color: #fff;
+  }
+  .menu {
+    display: inline-block;
+  }
+  header {
+    .logo {
+      display: inline-block;
+    }
+  }
+  .nav-resp {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  nav {
+    li {
+      display: block;
+      height: 60px;
+    }
+  }
+  .wrap {
+    &-block {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
     }
   }
 }
